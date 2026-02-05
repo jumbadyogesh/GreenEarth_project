@@ -10,7 +10,7 @@ body{
 /* hero section */
 .hero{
     /* margin-top: 5rem; */
-    padding: 2rem 0;
+    padding: 9.3rem 0;
     border: #28a745 solid 1px;
     background: #f8fdf5;
 
@@ -46,10 +46,19 @@ body{
     border-radius: 5px;
     margin-left: 30px;
 }
+.hero-content a:hover{
+    background: #218838;
+    transform: matrix(1.1);
+    -webkit-transform: matrix(1.1);
+    -moz-transform: matrix(1.1);
+    -ms-transform: matrix(1.1);
+    -o-transform: matrix(1.1);
+}
+
 .hero-image img{
     width: 400px;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
     animation-name: bounce;
     animation-duration:5s  ;
     animation-iteration-count: infinite;
@@ -64,6 +73,10 @@ body{
     100% {
         transform: translateY(0);
     }
+}
+.hero-image img:hover{
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+    
 }
 .section{
     width: 100%;

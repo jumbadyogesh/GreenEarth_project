@@ -1,4 +1,4 @@
-*{
+    *{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -255,4 +255,159 @@ body{
   .hero-content h1{
     font-size:2.2rem;
   }
+}
+
+/* ================= LOGIN POPUP ================= */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.login-popup {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: popup 0.3s ease;
+  position: relative;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.login-popup h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  transition: border 0.3s;
+}
+
+.login-popup input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+.login-popup button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-popup button:hover {
+  background: #1e8449;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Registration Popup ==========================*/ 
+.register-popup {
+    background: #fff;
+    padding: 25px;
+    width: 320px;
+    border-radius: 8px;
+    position: relative;
+    animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.register-popup h2 {
+    text-align: center;
+}
+
+/* Inputs */
+.register-popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* Button */
+.register-popup button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Close */
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
 }

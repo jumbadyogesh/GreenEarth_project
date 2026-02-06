@@ -44,14 +44,46 @@
                 </div>
             </nav>
 
+           
             <!-- DESKTOP LOGIN / REGISTER -->
             <div class="desktop-auth">
-                <a href="#" class="login">Login</a>
-                <a href="#" class="register">Register</a>
+                <a href="#" class="login" id="desktop-login">Login</a>
+                <a href="#" class="register" id="registerBtn">Register</a>
             </div>
 
+            <!-- Login Popup -->
+            <div class="overlay" id="overlay">
+                <div class="login-popup">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <input type="text" placeholder="Username" required />
+                        <input type="password" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Register Popup -->
+            <div class="overlay" id="regOverlay">
+                <div class="register-popup">
+                    <span class="close-btn" id="closeReg">&times;</span>
+            
+                    <h2>Register</h2>
+            
+                    <form>
+                        <input type="text" placeholder="Full Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <input type="password" placeholder="Password" required />
+                        <input type="password" placeholder="Confirm Password" required />
+                        <button type="submit">Create Account</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
+
+   
 
     <!-- HERO SECTION -->
     <section class="hero">

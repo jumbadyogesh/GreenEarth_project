@@ -3,53 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenEarth - Live Sustainably, Protect Our Future</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>GreenEarth</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <section>
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <h3>🌍 GreenEarth</h3>
+
+    <header class="header">
+        <div class="nav-container">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="GreenEarth Logo">
+                <h3>GreenEarth</h3>
+            </div>
+
+            <!-- CHECKBOX (HAMBURGER CONTROL) -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- HAMBURGER ICON -->
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- MENU -->
+            <nav class="menu">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <!-- MOBILE LOGIN / REGISTER -->
+                <div class="mobile-auth">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="register">Register</a>
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <li><a href="#feedback">feedback</a></li>
-                        <li><a href="#blog">blog</a></li>
-                    </ul>
-                </div>
-                <div class="btn">
-                    <ul>
-                        <li><a href="">Login</a></li>
-                        <li><a href="">Register</a></li>
-                    </ul>
-                </div>
-            </header>
+            </nav>
+
+            <!-- DESKTOP LOGIN / REGISTER -->
+            <div class="desktop-auth">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="register">Register</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+
+            <div class="hero-content">
+                <h1>Live Sustainably.<br>Protect Our Future.</h1>
+                <p>
+                    Join the movement to create a greener, cleaner planet.
+                    Small steps lead to big changes.
+                </p>
+                <a href="#" class="hero-btn">Our Mission</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/tree3.jpg" alt="Green Nature">
+            </div>
+
         </div>
     </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Live Sustainably. <br>Protect Our Future.</h1>
-                <p>Join the movement to create a greener, cleaner planet. Small steps lead to big changes. Together, we can make a difference in environmental conservation and sustainable living.</p>
-                <div class="hero-buttons">
-                    <a href="#mission" class="btn-primary">Our Mission</a>
-                    <a href="#tips" class="btn-secondary">Get Tips</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/tree3.jpg" alt="Breathtaking lush green forest landscape" class="hero-img">
-            </div>
-        </div>
-    </section>
+</body>
 
     <script src="./script.js"></script>
 </body>

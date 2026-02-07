@@ -81,7 +81,7 @@ body{
   left:0;
   bottom:-5px;
   width:0;
-  height:3px;
+  height: 2px;px;
   background:#28a745;
   transition:0.4s;
 }
@@ -102,39 +102,39 @@ body{
   text-decoration:none;
   padding:7px 18px;
   border-radius:5px;
-  transition:0.3s;
+  /* transition:0.3s; */
   font-size:15px;
 }
 
 .login{
   border:1px solid #28a745;
   color:#28a745;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .login:hover{
   background:#28a745;
   color:#fff;
-  transform: scale(1.03);
+  /* transform: scale(1.03);
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
+  -o-transform: scale(1.03); */
 }
 
 .register{
   background:#28a745;
   color:#fff;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .register:hover{
   background:#1e7e34;
-  transform: scale(1.03);
+  /* transform: scale(1.03);
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
+  -o-transform: scale(1.03); */
 }
 
 /* hide mobile auth on desktop */
@@ -363,6 +363,10 @@ body{
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
 }
 
 .login-popup button:hover {
@@ -553,10 +557,10 @@ body{
     padding: 35px 25px;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    flex: 1;
+    border-top: 4px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
+    /* flex: 1; */
     animation: slideInUp 0.8s ease;
-    animation-fill-mode: both;
 }
 
 .box:nth-child(1) { animation-delay: 0.2s; }
@@ -565,8 +569,12 @@ body{
 
 .box:hover {
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(40, 167, 69, 0.2);
-    border-top: 4px solid #28a745;
+    border-top-color: #28a745;
 }
 
 .box-icon {

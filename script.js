@@ -1,4 +1,3 @@
-// Simple UI behavior for menu and popups (keeps JS minimal)
 
 const menuToggle = document.getElementById('menu-toggle');
 
@@ -28,16 +27,20 @@ if (closeBtn) closeBtn.addEventListener('click', () => { if (overlay) overlay.st
 if (overlay) {
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) overlay.style.display = 'none';
+    
   });
 }
 
 // Handle login form submit (placeholder behavior)
 const loginForm = document.getElementById('loginForm');
+
 if (loginForm) {
+  
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Login successful ✅');
     if (overlay) overlay.style.display = 'none';
+     document.body.classList.remove("no-scroll");
   });
 }
 

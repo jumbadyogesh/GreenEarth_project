@@ -36,7 +36,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#mission">Mission</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#feedback">FeedBack</a></li>
                 </ul>
 
                 <!-- MOBILE LOGIN / REGISTER -->
@@ -77,7 +77,6 @@
                         <input type="text" placeholder="Full Name" required />
                         <input type="email" placeholder="Email" required />
                         <input type="password" placeholder="Password" required />
-                        <input type="password" placeholder="Confirm Password" required />
                         <button type="submit">Create Account</button>
                     </form>
                 </div>
@@ -116,24 +115,32 @@
 
         <div class="about-box">
             <div class="about-text">
-                <h3>Who We Are</h3>
-                <p>
-                    GreenEarth is a platform dedicated to spreading awareness about
-                    environmental protection and sustainable living practices.
-                </p>
+                <div class="abt">
+                    <h3>Who We Are</h3>
+                    <p>
+                        GreenEarth is a platform dedicated to spreading awareness about
+                        environmental protection and sustainable living practices.
+                    </p>
+                </div>
+                
 
-                <h3>Our Vision</h3>
-                <p>
-                    We believe that small actions can lead to big changes.
-                    Our goal is to inspire and empower people to protect our planet
-                    for future generations.
-                </p>
+               <div class="abt">
+                    <h3>Our Vision</h3>
+                    <p>
+                        We believe that small actions can lead to big changes.
+                        Our goal is to inspire and empower people to protect our planet
+                        for future generations.
+                    </p>
+               </div>
 
-                <h3>What We Do</h3>
-                <p>
-                    We provide resources, tips, and community support to help you
-                    live sustainably while reducing your carbon footprint.
-                </p>
+                <div class="abt">
+                    <h3>What We Do</h3>
+                    <p>
+                        We provide educational content, practical tips, and resources
+                        to help individuals and communities adopt eco-friendly habits.
+                        From reducing waste to conserving energy, we cover it all.
+                    </p>
+                </div>
             </div>
 
             <div class="about-img">
@@ -152,7 +159,7 @@
         <div class="mission-box">
             <div class="box">
                 <div class="box-image">
-                    <img src="images/solar.jpg" alt="Solar Energy">
+                    <img src="images/solar.jpg" alt="Solar Energy" style="object-fit: contain;">
                 </div>
 
                 <h3>Renewable Energy</h3>
@@ -169,7 +176,7 @@
 
             <div class="box">
                 <div class="box-image">
-                    <img src="images/water.jpg" alt="Water Conservation" style="height: 150px; object-fit:contain;">
+                    <img src="images/water.jpg" alt="Water Conservation" style="height: 140px; margin-top: 10px; object-fit:contain;">
                 </div>
 
                 <h3>Water & Resource Conservation</h3>
@@ -186,7 +193,7 @@
 
             <div class="box">
                 <div class="box-image">
-                    <img src="images/ev.jpg" alt="Green Transportation">
+                    <img src="images/ev.jpg" alt="Green Transportation" style="object-fit: contain;">
                 </div>
 
                 <h3>Sustainable Transportation</h3>
@@ -204,9 +211,74 @@
     </section>
 
 
+*   
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or want to join the movement? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Warje Bridge<br>Pune City, Maharashtra</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:greenearth@gmail.com">greenearth@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">📞</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+919876543210">+91 9876543210</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">⌚</div>
+                        <h3>Hours</h3>
+                        <p>Mon - Fri: 9 AM - 6 PM<br>Weekend: 10 AM - 4 PM</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us your thoughts..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- users scroll bar  -->
 
-    <section>
+    <section class="feedback" id="feedback">
         <div class="slider-heading">
             <h1>Our Feedbacks</h1>
         </div>
@@ -249,7 +321,7 @@
                     </div>
                 </div>
 
-                <!--  agter foe -->
+                <!--  -->
 
                 <div class="user1">
                     <img src="./images/user5.webp" alt="">

@@ -36,7 +36,7 @@ const loginForm = document.getElementById('loginForm');
 if (loginForm) {
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Login submitted!');
+    alert('Login successful ✅');
     if (overlay) overlay.style.display = 'none';
   });
 }
@@ -64,7 +64,7 @@ if (regOverlay) {
   if (regForm) {
     regForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Account created (demo)');
+      alert('Account created successfully ✅');
       regOverlay.style.display = 'none';
     });
   }

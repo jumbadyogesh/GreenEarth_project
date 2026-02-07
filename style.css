@@ -731,6 +731,21 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.user1:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  transform: translateX(-10);
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
 .user1 .info{
  width: 100%;
 

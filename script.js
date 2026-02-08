@@ -3,8 +3,9 @@ const menuToggle = document.getElementById('menu-toggle');
 
 // Close mobile menu when any nav/menu link is clicked
 document.querySelectorAll('.menu a').forEach(link => {
+  menuToggle.checked = false;
   link.addEventListener('click', () => {
-    if (menuToggle) menuToggle.checked = false;
+    if (menuToggle) 
   });
 });
 
